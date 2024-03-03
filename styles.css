@@ -374,7 +374,6 @@
         transform-origin: 13vw 19vh;
         box-shadow: 2vmin 0 0.6982868231235069vmin currentColor;
     }
-    
 
 
    /* HEAD */
@@ -383,7 +382,7 @@
     height: auto;
     width: 100%;
     position: relative;
-    padding-bottom: 2em;
+    z-index: 12;
    }
    
    
@@ -585,20 +584,28 @@
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    .example {background: green;}
+    body{
+        display: none;
+    }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .example {background: blue;}
+        body{
+        display: none;
+    }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    .example {background: orange;}
+ body{
+        display: none;
+    }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
+  body{
+        display: none;
+    }
   }

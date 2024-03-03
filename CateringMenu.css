@@ -1,0 +1,72 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    body{
+        background-color: rgba(4, 3, 2, 0.567);
+    }
+
+    h1{
+        text-align: center;
+        position: relative;
+        top: 8em;
+    }
+
+    /* CATERING MENU */
+    li, a{
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+        margin: 1.5em;
+        top: 140px;
+        text-align: center;
+        font-size: 1.2em;
+        
+    }
+
+    menu a:hover{
+        color: red;
+    }
+
+     .background-img{
+        width: 100%;
+        height: auto;
+        position: fixed;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+    }
+
+   
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        display: none;
+    }
+}
