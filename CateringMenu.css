@@ -6,22 +6,10 @@
     }
 
     h1{
-        text-align: center;
-        position: relative;
-        top: 8em;
+text-align: center
     }
 
     /* CATERING MENU */
-    li, a{
-        text-decoration: none;
-        list-style: none;
-        position: relative;
-        margin: 1.5em;
-        top: 140px;
-        text-align: center;
-        font-size: 1.2em;
-        
-    }
 
     menu a:hover{
         color: red;
