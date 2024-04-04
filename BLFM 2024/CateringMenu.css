@@ -1,0 +1,191 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    *,
+    *::before,
+    *::after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        
+    }
+
+                /* POP UP ALERT*/
+    
+   
+        
+        .popup{
+            background-color: rgba(255, 255, 255, 0.903);
+            width: 329px;
+            padding: 30px 50px;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            border-radius: 8px;
+            font-family:'Courier New', Courier, monospace;
+            z-index: 9;
+            display: none;
+        }
+
+   
+
+        .popup button{
+            display: block;
+            margin: 0 0 0 auto;
+            background-color: transparent;
+            font-size: 30px;
+            color: blue;
+            border: none;
+            outline: none;
+            cursor: pointer;
+  
+        }
+
+        .popup button:hover{
+            color: rgb(246, 0, 0);
+        }
+
+        .popup h2{
+            text-align: center;
+        }
+
+        .popup p{
+            font-size: 14px;
+            text-align: center;
+            margin: 20px 0;
+            color: black;
+            padding-top: 1em;
+            font-size: 1.2em;
+        }
+
+
+        #red-words{
+            color: red;
+            font-weight: bold;
+        }
+
+        #white-words{
+            color: green;
+            font-weight: bold;
+
+        }
+
+
+
+
+    body{
+        background-color: rgba(0, 0, 0, 0.868);
+    }
+
+                /*NAV */
+    .nav{
+        padding-top: 1.5em;
+        padding-right: 0em;
+        font-family: "Major Mono Display", monospace;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .nav-link{
+        color: white;
+        font-size: .8em;
+    }
+
+    .active{
+        background-color: green;
+        border-radius: 10%;
+    }
+    .nav .active:hover{
+        color: white;
+        background-color: rgb(53, 53, 246);
+
+    }
+
+    .nav .hov:hover{
+        color: rgb(208, 227, 0);
+    }
+
+    .fix-img{
+        position: fixed;
+        z-index: -4;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+
+
+                 /* HEAD */
+
+    h1{
+    text-align: center;
+    padding-top: 2em;
+        font-family: "Sacramento", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.5em;
+        color: white;
+      
+      
+    }
+
+                 /* CATERING MENU */
+    menu{
+        list-style-type: none;
+        position: relative;
+        padding-top: 2em;
+        text-align: center;
+
+    }
+    menu a{
+        color: rgb(252, 252, 252);
+        filter: drop-shadow(4px 10px 2px black);
+        text-decoration: none;
+        font-family: "Patrick Hand", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+    }
+
+    menu li{
+        padding: 5px;
+    }
+
+    menu a:hover{
+        color: rgb(92, 144, 241);
+    }
+
+
+   
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        display: none;
+    }
+}
