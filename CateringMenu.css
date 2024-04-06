@@ -75,34 +75,40 @@
 
 
     body{
-        background-color: rgba(0, 0, 0, 0.868);
+        background-color: rgb(17, 101, 45);
     }
 
                 /*NAV */
     .nav{
         padding-top: 1.5em;
         padding-right: 0em;
-        font-family: "Major Mono Display", monospace;
+        position: fixed;
+        right: 0;
+        z-index: 9;
+        
+
+        font-family: "Macondo", cursive;
         font-weight: 400;
         font-style: normal;
     }
     .nav-link{
         color: white;
-        font-size: .8em;
+        font-size: 4.5vw;
     }
 
     .active{
-        background-color: green;
+        background-color: rgb(203, 30, 30);
         border-radius: 10%;
     }
     .nav .active:hover{
         color: white;
-        background-color: rgb(53, 53, 246);
+        background-color: rgb(47, 47, 231);
 
     }
 
     .nav .hov:hover{
-        color: rgb(208, 227, 0);
+        color: red;
+
     }
 
     .fix-img{
@@ -111,6 +117,7 @@
         width: 50vw;
         display: flex;
         justify-content: center;
+        top: 4em;
         
         
     }
@@ -120,7 +127,9 @@
 
     h1{
     text-align: center;
-    padding-top: 2em;
+    padding-top: 4em;
+    filter: drop-shadow(4px 10px 2px black);
+
         font-family: "Sacramento", cursive;
         font-weight: 400;
         font-style: normal;
@@ -135,16 +144,19 @@
         list-style-type: none;
         position: relative;
         padding-top: 2em;
+        padding-bottom: 3em;
         text-align: center;
 
     }
     menu a{
         color: rgb(252, 252, 252);
-        filter: drop-shadow(4px 10px 2px black);
+        filter: drop-shadow(4px 7px 2px black);
         text-decoration: none;
-        font-family: "Patrick Hand", cursive;
+
+        font-family: "Macondo", cursive;
         font-weight: 400;
         font-style: normal;
+
         font-size: 1.5em;
     }
 
@@ -156,8 +168,48 @@
         color: rgb(92, 144, 241);
     }
 
-
+            /* FOOTER */
    
+    footer{
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+        top: 50%;
+        left: 0%;
+        height: 10px;
+        padding-top: 2em;
+        padding-bottom: 5em;
+        background-color: rgba(128, 128, 128, 0.097);
+        width: 100%;
+        
+    }
+
+    .bi-facebook{
+        height: auto;
+        width: 15vw;
+        position: relative;
+        color: black;
+        filter: drop-shadow( 4px -2px 1px rgb(89, 158, 181));
+        right: 2em;
+    }
+    .bi-facebook:hover{
+        color: rgb(12, 100, 215);
+
+    }
+
+    .bi-tiktok{
+        height: auto;
+        width: 15vw; 
+       color: rgb(0, 0, 0);
+       filter: drop-shadow( 5px 2px 3px aqua);
+       position: relative;
+       left: 2em;
+    }
+
+    .bi-tiktok:hover{
+        color: #ff0050;
+
+    }
 
 
 }

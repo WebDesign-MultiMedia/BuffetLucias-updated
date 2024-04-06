@@ -395,8 +395,14 @@
    .socialMedia {
         color: white;
         display: flex;
-        justify-content: end;
+        justify-content: center;
         flex-direction: column;
+        font-size: 15px;
+
+        font-family: "Kode Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
     }
     
     .socialMedia div{
@@ -404,19 +410,14 @@
         justify-content: center;
         margin: 1vw;
 
+
     }
 
     a{
         text-decoration: none;
     }
 
-    /* Sat and Sun Menu */
 
-    .Sat-Sun-Menu{
-        background-color: red;
-        border-radius: 2em;
-        height: 3em;
-    }
     
     /* Catering Menu */
     #sameSize-0{
