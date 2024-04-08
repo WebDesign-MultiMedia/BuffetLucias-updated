@@ -1,0 +1,98 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{ 
+        background-color: darkred;
+    }
+
+             /* HEAD */
+
+        .MenuHead{
+            position: relative;
+            top: 25%;
+            padding-top: 2em;
+        }
+
+       .MenuHead h1{
+        position: relative;
+        font-size: 10vw;
+        text-align: center;
+       } 
+
+       .MenuHead h2{
+        position: relative;
+        font-size: 7vw;
+        text-align: center;
+       }
+    
+              /* MENU */
+
+       menu{
+        position: relative;
+        padding-top: 10px;
+        font-size: 6vw;      
+     }
+
+       menu a{
+        color: red;
+        display: flex;
+        justify-content: center;
+    }
+
+
+        /* CONTACT LOCATION */
+        
+        .Contact{
+            position: relative;
+            padding-top: .4em;
+        }
+
+        .Contact .info{
+            text-align: center;
+            font-size: 6vw;
+            margin: 2em;
+        } 
+
+        .tel, .GoogleMap{
+            list-style-type: none;
+            color: yellow;
+            text-decoration: none;
+        }
+
+             .tel .GoogleMap:hover{
+                color: aqua;
+             }
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }
