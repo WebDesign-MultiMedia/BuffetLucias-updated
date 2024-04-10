@@ -198,7 +198,7 @@
         position: relative;
         font-size: 10vw;
         text-align: center;
-        color: whitesmoke;
+        color: rgb(217, 217, 4);
        } 
 
        .MenuHead h2{
@@ -218,11 +218,12 @@
      }
 
        menu a{
-        color: rgb(240, 240, 126);
+        color:  white;
         display: flex;
         justify-content: left;
         padding-left: 4em;
-        text-decoration: none
+        text-decoration: none;
+        filter: drop-shadow(2px 2px 3px black);
     }
 
     menu a:hover{
@@ -253,7 +254,7 @@
     }
 
     .HoursOfOperation h3{
-      color: white;
+      color: rgb(217, 217, 4);
       filter: drop-shadow( 3px 3px 4px black);
 
     }
@@ -262,7 +263,9 @@
       position: absolute;
       z-index: 4;
       top: 3.8em;
-      color: rgb(240, 240, 126);
+      color: white;
+      filter: drop-shadow(2px 2px 4px black);
+
     }
 
     .HoursOfOperation details:hover{
@@ -338,7 +341,7 @@
 
         footer{
           position: absolute;
-          top: 90%;
+          top: 85%;
           left: 0;
           right: 0;
           height: 4em;
