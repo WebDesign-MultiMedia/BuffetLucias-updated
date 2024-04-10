@@ -418,6 +418,22 @@
     }
 
 
+    /* SATURDAY SUNDAY MENU */
+    .SatSun-Menu{
+         background-color:rgba(255, 0, 0, 0.535);
+        border-radius: 2em;
+        height: 3.5em;
+        position: relative;
+    }
+
+    .SatSun-Menu h3{
+        color: white;
+    }
+
+    .SatSun-Menu:hover{
+        background-color: #10a213;
+    }
+
     
     /* Catering Menu */
     #sameSize-0{
