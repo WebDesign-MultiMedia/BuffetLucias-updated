@@ -3,25 +3,209 @@
     body{ 
         background-color: darkred;
     }
+    @keyframes move {
+      100% {
+          transform: translate3d(0, 0, 1px) rotate(360deg);
+      }
+  }
+  
+  .background {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: #6f1b1b;
+      overflow: hidden;
+  }
+  
+  .background span {
+      width: 1vmin;
+      height: 1vmin;
+      border-radius: 1vmin;
+      backface-visibility: hidden;
+      position: absolute;
+      animation: move;
+      animation-duration: 45;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+  }
+  
+  
+  .background span:nth-child(0) {
+      color: #b5b5b5;
+      top: 10%;
+      left: 28%;
+      animation-duration: 50s;
+      animation-delay: -37s;
+      transform-origin: 10vw -2vh;
+      box-shadow: -2vmin 0 0.27493447119465664vmin currentColor;
+  }
+  .background span:nth-child(1) {
+      color: #707070;
+      top: 51%;
+      left: 52%;
+      animation-duration: 49s;
+      animation-delay: -5s;
+      transform-origin: -3vw -1vh;
+      box-shadow: 2vmin 0 0.5759008256147424vmin currentColor;
+  }
+  .background span:nth-child(2) {
+      color: #949494;
+      top: 95%;
+      left: 80%;
+      animation-duration: 40s;
+      animation-delay: -38s;
+      transform-origin: -12vw -22vh;
+      box-shadow: 2vmin 0 0.36814681693307905vmin currentColor;
+  }
+  .background span:nth-child(3) {
+      color: #b5b5b5;
+      top: 10%;
+      left: 1%;
+      animation-duration: 17s;
+      animation-delay: -34s;
+      transform-origin: 7vw 23vh;
+      box-shadow: -2vmin 0 0.8024879520875441vmin currentColor;
+  }
+  .background span:nth-child(4) {
+      color: #707070;
+      top: 16%;
+      left: 69%;
+      animation-duration: 9s;
+      animation-delay: -2s;
+      transform-origin: -8vw 6vh;
+      box-shadow: 2vmin 0 0.2949696499076748vmin currentColor;
+  }
+  .background span:nth-child(5) {
+      color: #949494;
+      top: 92%;
+      left: 25%;
+      animation-duration: 13s;
+      animation-delay: -28s;
+      transform-origin: -6vw -3vh;
+      box-shadow: -2vmin 0 1.044787379595846vmin currentColor;
+  }
+  .background span:nth-child(6) {
+      color: #707070;
+      top: 76%;
+      left: 81%;
+      animation-duration: 42s;
+      animation-delay: -33s;
+      transform-origin: -21vw 25vh;
+      box-shadow: 2vmin 0 1.0005251377578377vmin currentColor;
+  }
+  .background span:nth-child(7) {
+      color: #707070;
+      top: 63%;
+      left: 39%;
+      animation-duration: 29s;
+      animation-delay: -20s;
+      transform-origin: -15vw -8vh;
+      box-shadow: 2vmin 0 0.589002036199104vmin currentColor;
+  }
+  .background span:nth-child(8) {
+      color: #b5b5b5;
+      top: 36%;
+      left: 13%;
+      animation-duration: 50s;
+      animation-delay: -47s;
+      transform-origin: 21vw 23vh;
+      box-shadow: 2vmin 0 0.9886219086006682vmin currentColor;
+  }
+  .background span:nth-child(9) {
+      color: #b5b5b5;
+      top: 92%;
+      left: 29%;
+      animation-duration: 31s;
+      animation-delay: -45s;
+      transform-origin: -15vw 3vh;
+      box-shadow: 2vmin 0 1.0061866507809152vmin currentColor;
+  }
+  .background span:nth-child(10) {
+      color: #707070;
+      top: 87%;
+      left: 7%;
+      animation-duration: 51s;
+      animation-delay: -10s;
+      transform-origin: 20vw -17vh;
+      box-shadow: 2vmin 0 0.3102403654693422vmin currentColor;
+  }
+  .background span:nth-child(11) {
+      color: #707070;
+      top: 68%;
+      left: 37%;
+      animation-duration: 38s;
+      animation-delay: -21s;
+      transform-origin: -12vw -18vh;
+      box-shadow: 2vmin 0 1.0057408648049113vmin currentColor;
+  }
+  
+
+  /* NAVIGATION */
+  /*NAV */
+ 
+ .nav{
+  position: fixed;
+  font-size: 1em;
+  z-index: 9;
+  display: inline-flex;
+
+ }
+
+ .nav-link{
+  margin: 1em;
+  list-style-type: none;
+  font-size: 20px;
+  color: white;  
+  position: relative;
+  top: 10%;
+  font-size: 5.3vw;
+}
+
+
+  .nav-item{
+    background-color: #94949452;
+    filter: drop-shadow(2px 2px 4px black);
+    width: 100%;
+    height: 2em;
+    border-radius: 5px;
+  }
+
+  .nav-item:hover{
+    background-color: rgb(30, 30, 209);
+  }
+
+ .nav a, li{
+  list-style-type: none;
+  text-decoration: none;
+
+ }
+
+
+
+    
 
              /* HEAD */
 
         .MenuHead{
             position: relative;
-            top: 25%;
-            padding-top: 2em;
+            padding-top: 6em;
+            filter: drop-shadow( 3px 3px 4px black);
         }
 
        .MenuHead h1{
         position: relative;
         font-size: 10vw;
         text-align: center;
+        color: whitesmoke;
        } 
 
        .MenuHead h2{
         position: relative;
         font-size: 7vw;
         text-align: center;
+        color: rgb(133, 216, 133);
        }
     
               /* MENU */
@@ -29,42 +213,156 @@
        menu{
         position: relative;
         padding-top: 10px;
-        font-size: 6vw;      
+        padding-left: 0%;
+        font-size: 6vw;   
      }
 
        menu a{
-        color: red;
+        color: rgb(240, 240, 126);
         display: flex;
-        justify-content: center;
+        justify-content: left;
+        padding-left: 4em;
+        text-decoration: none
     }
+
+    menu a:hover{
+      color: aquamarine;
+    }
+
+    .bi{
+      position: relative;
+      padding-left: 0.2em;
+      color: white;
+
+    }
+
+      /* HOURS OF OPERATION */
+
+      h3{
+        color: white;
+        filter: drop-shadow( 3px 3px 4px black);
+
+      }
+
+    .HoursOfOperation{
+      position: relative;
+      padding-left: 20%;
+      padding-top: 1em;
+      padding-bottom: 2em;
+      font-size: 6vw;
+    }
+
+    .HoursOfOperation h3{
+      color: white;
+      filter: drop-shadow( 3px 3px 4px black);
+
+    }
+
+    .HoursOfOperation details{
+      position: absolute;
+      z-index: 4;
+      top: 3.8em;
+      color: rgb(240, 240, 126);
+    }
+
+    .HoursOfOperation details:hover{
+      color: aquamarine;
+    }
+
+    .HoursOfOperation .Hours{
+      background-color: rgb(122, 122, 122);
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 5%;
+      width: 300px;
+      height: auto;
+      top: 40px;
+
+
+    }
+
+    .Hours{
+      position: absolute;
+      right: -35%;
+      z-index: -9;
+      padding-top: 1em;
+
+
+    }
+
+
+    #sat, #sun{
+      padding: 2em;
+    }
+
+    p{
+      position: relative;
+      left: 0;
+      color: red;
+      filter: drop-shadow(2px 2px 1px black);
+
+    }
+
 
 
         /* CONTACT LOCATION */
         
         .Contact{
-            position: relative;
-            padding-top: .4em;
+          display: flex;
+          justify-content: space-evenly;
+    
         }
 
         .Contact .info{
             text-align: center;
             font-size: 6vw;
-            margin: 2em;
+          padding-left: 15%;
         } 
+        .Contact .Location{
+          padding-right: 15%;
+        }
 
         .tel, .GoogleMap{
             list-style-type: none;
-            color: yellow;
+            color: rgb(212, 212, 28);
             text-decoration: none;
+            position: relative;
         }
 
-             .tel .GoogleMap:hover{
-                color: aqua;
-             }
+        .Contact a:hover{
+          color: aquamarine;
+        }
 
+        /* FOOTER */
 
+        footer{
+          position: absolute;
+          top: 90%;
+          left: 0;
+          right: 0;
+          height: 4em;
+          padding-left: 20%;
+          padding-bottom: 2em;
+          background-color: #94949452;
+        }
 
+        footer .tiktok img{
+          width: 95px;
+          height: auto;
+          position: absolute;
+          top: 1em;
 
+        }
+
+          footer .facebook img{
+            position: relative;
+            width: 50px;
+            height: auto;
+            position: absolute;
+            right: 20%;
+            top: 1em;
+          }
 
 
 
